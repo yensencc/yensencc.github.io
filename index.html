@@ -1,0 +1,23 @@
+<script src= "http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+</script>
+
+<h1>Duke Compose Green Screen</h1>
+<canvas class = "canvas" id="fgcan">
+</canvas>
+<canvas class = "canvas" id="bgcan">
+</canvas>
+</br>
+
+<p>Foreground image</p>
+<input type = "file" multiple = "false" accept= "image/*"   id="fgfile" onchange = "loadForegroundImage()">
+<p>Background image</p>
+<input type = "file" multiple = "false" accept= "image/*"   id="bgfile" onchange ="loadBackgroundImage()">
+
+</br>
+<input id="bu1" type= "button" value="Make grey" onclick= "makeGray()">
+
+
+
+<input id="bu3" type= "button" value="Clear Canvases" onclick= "clearCanvas()">
+
+<input id="bu2" type= "button" value="Create Composite" onclick= "outputMessage()">
